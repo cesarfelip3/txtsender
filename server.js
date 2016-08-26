@@ -1,5 +1,9 @@
 var express = require("express");
 var app = express();
+
+
+app.use('/public', express.static('public'));
+
 var router = express.Router();
 var path = __dirname + '/views/';
 
