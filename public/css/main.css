@@ -79,6 +79,11 @@ img {
     height: auto;
 }
 
+img.banner {
+  width: 50%;
+  height: auto;
+}
+
 .footer-distributed{
 	background-color: #0f0e39;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
