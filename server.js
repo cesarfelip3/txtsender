@@ -16,12 +16,12 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
-router.get("/about",function(req,res){
-  res.sendFile(path + "about.html");
+router.get("/faq",function(req,res){
+  res.sendFile(path + "faq.html");
 });
 
-router.get("/contact",function(req,res){
-  res.sendFile(path + "contact.html");
+router.get("/send_free_sms",function(req,res){
+  res.sendFile(path + "sendsms.html");
 });
 
 app.use("/",router);

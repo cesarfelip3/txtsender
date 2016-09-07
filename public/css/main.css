@@ -1,0 +1,92 @@
+
+
+/* Add an blue color to all icons and set the font-size */
+.icons-small {
+  color: #8e2e8e;
+  font-size: 30px;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.jumbotron {
+  background-color: #f1f0f3;
+}
+
+
+
+.logo-font {
+  font-family:"Goudy Bookletter 1911", sans-serif;
+  font-style: italic;
+}
+
+
+h1 {
+  font-family:inherit;
+  font-size: 55px;
+  font-weight: bolder;
+  color: #0F0E39;
+}
+
+h3 {
+  font-family: inherit;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+
+
+.input-group {
+    margin: 20px auto;
+    width: 100%;
+}
+input.btn.btn-lg,
+input.btn.btn-lg:focus {
+    outline: none;
+    width: 80%;
+    height: 80px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-width: 3px;
+    border-color: #e11172;
+}
+button.btn {
+    width: 20%;
+    height: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button.btn-info,
+button.btn-info:focus,
+button.btn-info:active,
+button.btn-info.active {
+  color: #ffffff;
+  background-color: #e11172;
+  border-color: #e11172;
+}
+
+button.btn-info:hover {
+  color: #ffffff;
+  background-color: #8f144d;
+  border-color: #8f144d;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-distributed{
+	background-color: #0f0e39;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+  color: #fff;
+	padding: 45px 50px;
+	margin-top: 80px;
+}

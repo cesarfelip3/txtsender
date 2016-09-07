@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="/public/css/bootstrap.css" rel="stylesheet">
+    <link href="/public/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,90 +25,176 @@
   <body>
 
 
-    <nav class="navbar navbar-inverse">
-   <div class="container">
-     <div class="navbar-header">
-       <a class="navbar-brand" href="#">TXT Sender</a>
-     </div>
-     <ul class="nav navbar-nav">
-       <li class="active"><a href="#">Home</a></li>
-       <li><a href="#">Send SMS Text</a></li>
-       <li><a href="#">FAQ</a></li>
-       <li><a href="#">About</a></li>
-       <li><a href="#">Contact US</a></li>
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-   </div>
- </nav>
+<!-- Menu -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
 <div class="container">
-  <div class="panel panel-default">
-  <div class="panel-heading"><h1>Free Text Message Sender</h1>
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+<a class="navbar-brand" href="/"><span class='logo-font'> TXT Sender</span> <i class="glyphicon glyphicon glyphicon-comment logo"></i></a>
 </div>
-  <div class="panel-body">
-    <p>Send FREE SMS text message instantly with our incredibly fast SMS Service.
-      The world best and fastest text messaging site online!</p>
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav navbar-left">
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="/send_free_sms">Send Free SMS</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="#">Pricing</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+   <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+ </ul>
+</div>
+</div>
+</nav>
 
-      <p>Nothing here {{'yet' + '!'}}</p>
-      <p>1 + 2 = {{1 + 2}}</p>
- 
 
 
+<!-- header -->
 
 
+<div class="jumbotron text-center">
+  <h1>Smarter SMS Marketing</h1>
+  <h3>TXT Sender is online text messaging software<br> for businesses and non-profits.</h3>
+<div class="container">
+  <img src="/public/images/table.png" alt="" />
+</div>
+</div>
 
-  <!-- HTML Form  -->
-  <div class="bootstrap-iso">
-   <div class="container-fluid">
-    <div class="row">
-     <div class="col-md-6 col-sm-6 col-xs-12">
-      <form class="" action="index.html" method="post">
-       <div class="form-group ">
-        <label class="control-label requiredField" for="phone">
-         Phone
-         <span class="asteriskField">
-          *
-         </span>
-        </label>
-        <input class="form-control" id="phone" name="phone" type="tel"/>
-       </div>
-       <div class="form-group ">
-        <label class="control-label requiredField" for="message">
-         Message
-         <span class="asteriskField">
-          *
-         </span>
-        </label>
-        <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
-       </div>
-       <div class="form-group ">
-        <label class="control-label requiredField" for="sender">
-         Sender
-         <span class="asteriskField">
-          *
-         </span>
-        </label>
-        <input class="form-control" id="sender" name="sender" type="text"/>
-       </div>
-       <div class="form-group">
-        <div>
-         <button class="btn btn-primary " name="submit" type="submit">
-          Submit
-         </button>
-        </div>
-       </div>
-      </form>
-     </div>
-    </div>
+<!-- sigh up -->
+<div class="container">
+	<div class="row">
+		<div class="text-center">
+     <h4>Sign up for free. No credit card. No setup fees. No contract.</h4>
    </div>
+     <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-left">
+             <form action="#">
+
+              <div class="input-group">
+                 <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Enter Your Email" required>
+                 <button class="btn btn-info btn-lg" type="submit">Submit</button>
+              </div>
+             </form>
+       </div>
+       <div class="col-sm-2"></div>
+
+	</div>
+</div>
+</section>
+
+<!-- About -->
+<div class="well">
+<div class="container text-center">
+
+
+  <h1>Simple, yet powerful</h1>
+  <div class="col-sm-2"></div>
+  <div class="about col-sm-8 text-center">
+  <h3>
+    Faster than any other SMS software. Real-time analytics that will blow your mind. Features you'll actually use. Discover why Clearstream is the obvious choice for thousands of small businesses, non-profits and brands in the U.S.
+  </h3>
+  <img src="/public/images/devices.png" alt="" />
   </div>
 
+</div>
+</div>
 
+<!-- features -->
+
+<div class="features">
+<div class="container">
+<h2>Features</h2>
+<br>
+<div class="container-fluid text-center bg-grey">
+<div class="row">
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon glyphicon-comment icons-small"></span>
+    <h4>Send messages</h4>
+    <p>Send or schedule a message to your subscribers. Outgoing messages are delivered at 250 texts/second.</p>
+  </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-bullhorn icons-small"></span>
+    <h4>Grow your lists</h4>
+    <p>Easily create keywords and website forms so customers/members can join your lists.</p>
+  </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-user icons-small"></span>
+    <h4>Manage subscribers</h4>
+    <p>See where new subscribers are coming from, capture data, and organize them into lists.</p>
+  </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-signal icons-small"></span>
+    <h4>Track performance</h4>
+    <p>Track metrics such as link clicks, opt-ins, opt-outs, delivery rates and message replies. All in real-time.</p>
   </div>
 </div>
+<br><br>
+<div class="row">
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-envelope icons-small"></span>
+    <h4>Smart inbox</h4>
+    <p>Manage and respond to incoming messages from subscribers. Perfect for a text-enabled feedback, help, or support line.</p>
   </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-link icons-small"></span>
+    <h4>Robust API</h4>
+    <p>Power your SMS application with our REST API, including custom webhooks.</p>
+  </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-phone icons-small"></span>
+    <h4>Mobile app</h4>
+    <p>Send messages, reply to incoming texts and much more with our iOS app (Android coming soon).</p>
+  </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-list-alt icons-small"></span>
+    <h4>Legal compliance</h4>
+    <p>FCC/TCPA compliance. CTIA/MMA compliance. Carrier compliance. We have you covered. Learn more.</p>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer class="footer-distributed">
+
+
+			<div class="footer-left text-left">
+
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Faq</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+
+			</div>
+
+      <div class="text-right">
+        	<p>TXT Sender &copy; 2018</p>
+
+      </div>
+
+
+
+		</footer>
+
+
+
+
+
+
+
 
 
 
