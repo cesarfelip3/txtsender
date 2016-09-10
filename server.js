@@ -1,35 +1,23 @@
-var express = require("express");
+//express
+
+var express = require('express');
 var app = express();
+var expressLayouts = require('express-ejs-layouts');
 
 
-app.use('/public', express.static('public'));
+var port = 3000;
+var router = require('./app/routes');
+app.use(express.static(__dirname + '/public'));
 
-var router = express.Router();
-var path = __dirname + '/views/';
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
 
-router.use(function (req,res,next) {
-  console.log("/" + req.method);
-  next();
-});
 
-router.get("/",function(req,res){
-  res.sendFile(path + "index.html");
-});
+app.use('/', router);
 
-router.get("/faq",function(req,res){
-  res.sendFile(path + "faq.html");
-});
 
-router.get("/send_free_sms",function(req,res){
-  res.sendFile(path + "sendsms.html");
-});
 
-app.use("/",router);
 
-app.use("*",function(req,res){
-  res.sendFile(path + "404.html");
-});
-
-app.listen(3000,function(){
-  console.log("Live at Port 3000");
+app.listen(port, function () {
+    console.log('working');
 });

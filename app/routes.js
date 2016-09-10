@@ -1,19 +1,28 @@
+// require express
+var express = require('express');
+var path = require('path');
 
-router.use(function (req,res,next) {
-  console.log("/" + req.method);
-  next();
+
+// create our router object
+var router = express.Router();
+
+module.exports = router;
+
+// route our homepage
+router.get('/', function(req, res) {
+    res.render("pages/index");
+
 });
 
-router.get("/",function(req,res){
-  res.sendFile(path + "index.html");
+router.get('/faq', function(req, res) {
+   res.render('pages/faq');
 });
 
-router.get("/about",function(req,res){
-  res.sendFile(path + "about.html");
+router.get('/send_free_sms', function(req, res) {
+    res.render('pages/sendsms');
 });
 
-router.get("/contact",function(req,res){
-  res.sendFile(path + "contact.html");
-});
 
-app.use("/",router);
+router.post('/contact', function (req, res) {
+
+});

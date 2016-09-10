@@ -6,10 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies" : {
-    "express" : "latest"
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "latest",
+    "express-ejs-layouts": "^2.2.0",
+    "nodemon": "^1.10.2"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cesarfelip3/txtsender.git"
