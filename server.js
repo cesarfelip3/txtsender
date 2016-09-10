@@ -2,7 +2,12 @@
 
 var express = require('express');
 var app = express();
+var bodyParser     = require("body-parser");
 var expressLayouts = require('express-ejs-layouts');
+// app.use(express.bodyParser());
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 
 var port = 3000;
